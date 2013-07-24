@@ -1,4 +1,5 @@
 #!/bin/sh
+rm -rf $HOME/.vim/bundle/vundle
 
 for name in *; do
   target="$HOME/.$name"
@@ -16,3 +17,39 @@ done
 
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 vim -u ~/.vimrc.bundles +BundleInstall +qa
+
+### Customization
+
+echo "Enter the name of the computer: "
+read computer_name
+
+remove_and_link(){
+  local target="$2"
+  local source="$1"
+
+  if [[ -d "${target}" && ! -L "${target}" ]] ; then
+    mv "${target}" "${target}.old"
+  fi
+
+  ln -snf "${source}" "${target}"
+}
+
+# Messages
+remove_and_link "$HOME/Dropbox/SoftwareSettings/Messages.$computer_name" "$HOME/Library/Messages"
+
+# Skype
+remove_and_link "$HOME/Dropbox/SoftwareSettings/kategengler.$computer_name.skype" "$HOME/Library/Application Support/Skype/kategengler"
+
+# KeyRemap4Mac
+remove_and_link "$HOME/Dropbox/SoftwareSettings/KeyRemap4Mac" "$HOME/Library/Application Support/KeyRemap4MacBook"
+
+# iTerm2
+remove_and_link "$HOME/Dropbox/SoftwareSettings/iterm.plist" "$HOME/Library/Preferences/com.googlecode.iterm2.plist"
+
+# Adium
+remove_and_link "$HOME/Dropbox/Adium 2.0" "$HOME/Library/Application Support/Adium 2.0"
+
+# RubyMine
+remove_and_link "$HOME/Dropbox/RubyMine Config/RubyMine50" "$HOME/Library/Preferences/RubyMine50"
+
+
