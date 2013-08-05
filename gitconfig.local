@@ -1,0 +1,5 @@
+[user]
+  name = Katie Gengler
+  email = katie@kmg.io
+[pull]
+  rebase = true

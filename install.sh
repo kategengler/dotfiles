@@ -41,7 +41,7 @@ remove_and_link "$HOME/Dropbox/SoftwareSettings/Messages.$computer_name" "$HOME/
 remove_and_link "$HOME/Dropbox/SoftwareSettings/kategengler.$computer_name.skype" "$HOME/Library/Application Support/Skype/kategengler"
 
 # KeyRemap4Mac
-remove_and_link "$HOME/Dropbox/SoftwareSettings/KeyRemap4Mac" "$HOME/Library/Application Support/KeyRemap4MacBook"
+remove_and_link "$HOME/Dropbox/SoftwareSettings/KeyRemap4MacBook" "$HOME/Library/Application Support/KeyRemap4MacBook"
 
 # iTerm2
 remove_and_link "$HOME/Dropbox/SoftwareSettings/iterm.plist" "$HOME/Library/Preferences/com.googlecode.iterm2.plist"
@@ -52,4 +52,6 @@ remove_and_link "$HOME/Dropbox/Adium 2.0" "$HOME/Library/Application Support/Adi
 # RubyMine
 remove_and_link "$HOME/Dropbox/RubyMine Config/RubyMine50" "$HOME/Library/Preferences/RubyMine50"
 
-
+if [[ ! -d "$HOME/dev" ]]; then
+  mkdir "$HOME/dev"
+fi
