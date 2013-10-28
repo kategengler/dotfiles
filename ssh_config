@@ -2,3 +2,18 @@ Host github.com
   User git
   HostName github.com
   IdentityFile ~/.ssh/github_id_rsa
+
+Host fgtest
+  User fg
+  HostName test.app.fundinggates.com
+  IdentityFile ~/.ssh/fg_id_rsa
+
+Host fgstaging
+  User fg
+  HostName staging.app.fundinggates.com
+  IdentityFile ~/.ssh/fg_id_rsa
+
+Host fgprod
+  User fg
+  HostName app.fundinggates.com
+  IdentityFile ~/.ssh/fg_id_rsa
