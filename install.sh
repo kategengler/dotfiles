@@ -50,7 +50,10 @@ remove_and_link "$HOME/Dropbox/SoftwareSettings/iterm.plist" "$HOME/Library/Pref
 remove_and_link "$HOME/Dropbox/Adium 2.0" "$HOME/Library/Application Support/Adium 2.0"
 
 # RubyMine
-remove_and_link "$HOME/Dropbox/RubyMine Config/RubyMine50" "$HOME/Library/Preferences/RubyMine50"
+remove_and_link "$HOME/Dropbox/RubyMine Config/RubyMine60" "$HOME/Library/Preferences/RubyMine60"
+
+# SSH Config
+remove_and_link "$HOME/dotfiles/ssh_config" "$HOME/.ssh/config"
 
 if [[ ! -d "$HOME/dev" ]]; then
   mkdir "$HOME/dev"
