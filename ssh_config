@@ -17,3 +17,13 @@ Host fgprod
   User fg
   HostName app.fundinggates.com
   IdentityFile ~/.ssh/fg_id_rsa
+
+Host lbprod
+  User deploy
+  HostName app.lenderboard.com
+  IdentityFile ~/.ssh/fg_id_rsa
+
+Host lbqa
+  User deploy
+  HostName qa.lenderboard.com
+  IdentityFile ~/.ssh/fg_id_rsa
