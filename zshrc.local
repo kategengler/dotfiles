@@ -1,2 +1,7 @@
+function precmd {
+  DIRNAME=$(basename "$PWD");
+  echo -ne "\e]1;$DIRNAME\a"
+}
+
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
