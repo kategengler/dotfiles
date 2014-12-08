@@ -1,0 +1,6 @@
+#!/bin/zsh
+#
+# Name the tab
+#
+
+echo -ne "\e]1;$1\a"
