@@ -6,3 +6,4 @@ function precmd {
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH"
 PATH="/usr/local/bin:$PATH"
+PATH="$HOME/npm-global/bin:$PATH"

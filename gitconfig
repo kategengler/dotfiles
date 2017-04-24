@@ -19,8 +19,9 @@
   excludesfile = ~/.gitignore
   autocrlf = input
 [merge]
-  ff = only
 [include]
   path = .gitconfig.local
 [commit]
   template = ~/.gitmessage
+[rerere]
+	enabled = true

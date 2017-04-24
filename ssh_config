@@ -1,39 +1,7 @@
+Host *
+  UseRoaming no
 Host github.com
   User git
   HostName github.com
   IdentityFile ~/.ssh/github_id_rsa
 
-Host qa
-  User bp
-  HostName qa.fundinggates.com
-  IdentityFile ~/.ssh/fg_id_rsa
-
-Host qasu
-  User deploy
-  HostName qa.fundinggates.com
-  IdentityFile ~/.ssh/fg_id_rsa
-
-Host fgstaging
-  User fg
-  HostName staging.app.fundinggates.com
-  IdentityFile ~/.ssh/fg_id_rsa
-
-Host prod
-  User bp
-  HostName app.fundinggates.com
-  IdentityFile ~/.ssh/fg_id_rsa
-
-Host lbprod
-  User deploy
-  HostName app.lenderboard.com
-  IdentityFile ~/.ssh/fg_id_rsa
-
-Host lbqa
-  User deploy
-  HostName qa.lenderboard.com
-  IdentityFile ~/.ssh/fg_id_rsa
-
-Host qa2
-  User bp
-  HostName qa2.fundinggates.com
-  IdentityFile ~/.ssh/fg_id_rsa
